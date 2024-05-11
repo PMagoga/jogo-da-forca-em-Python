@@ -1,0 +1,30 @@
+Sugestão em pseudocodigo para desenvolver um jogo da forca em Python
+
+
+1. Início do Jogo:
+2.    Escolha aleatoriamente uma palavra secreta de uma lista pré-definida.
+3.    Defina o número máximo de tentativas (por exemplo, 6).
+4.    Inicialize uma lista para acompanhar as letras já usadas.
+
+5.    Enquanto houver tentativas restantes e a palavra secreta não foi totalmente revelada:
+6.        Mostre a palavra atual com letras adivinhadas e traços para letras não reveladas.
+7.        Mostre as letras já usadas.
+8.        Solicite ao jogador que insira uma letra.
+
+9.        Verifique se a letra inserida é uma entrada válida (por exemplo, uma única letra do alfabeto).
+10.           Se a letra já foi usada, informe ao jogador e continue para a próxima iteração do loop.
+
+11.       Adicione a letra à lista de letras usadas.
+
+12.       Verifique se a letra está na palavra secreta:
+13.           Se sim:
+14.               Atualize a palavra a ser exibida revelando todas as ocorrências da letra.
+15.           Se não:
+16.               Reduza o número de tentativas restantes.
+
+17.    Verifique se a palavra secreta foi totalmente revelada:
+18.        Se sim, exiba uma mensagem de vitória.
+19.        Se não e não houver mais tentativas restantes, exiba uma mensagem de derrota.
+
+20. Fim do Jogo.
+
