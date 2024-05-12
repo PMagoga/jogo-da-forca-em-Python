@@ -1,3 +1,4 @@
+# Jogo da Forca - Versão 1
 # Importando as bibliotecas necessárias
 import random
 from os import system, name
@@ -52,8 +53,22 @@ def game():
                 if tentativa == letra:
                     letras_descobertas[index] = letra
                 index += 1
-            else:
-                chances -= 1
-                letras_erradas.append[tentativa]
+        else:
+            chances -= 1
+            letras_erradas.append(tentativa)
+                
+        # Condicional quando todas letras são descobertas
+        if "_" not in letras_descobertas:
+            print('\nVocê venceu, a palavra era:', palavra)
+            break
+        
+    # Condicional quando o usuário perde
+    if "_" in letras_descobertas:
+        print('\nVocê perdeu, a palavra era:', palavra)
+        
+# Bloco main
+if __name__ == "__main__":
+    game()
+    print('\nParabéns! Você ganhou! :) \n')
                 
                 
